@@ -94,7 +94,6 @@ class ResourcePageBlocks extends AbstractHelper
         $view = $this->getView();
         $blockLayout = $this->blockLayoutManager->get($blockName);
         $blockMarkup = $blockLayout->render($view, $this->resource);
-
         return $blockMarkup;
     }
 
