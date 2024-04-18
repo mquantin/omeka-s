@@ -97,7 +97,6 @@ class ResourcePageBlocks extends AbstractHelper
         return $blockMarkup;
     }
 
-
     /**
      * Return list  of block markup for a region of the resource page.
      *
