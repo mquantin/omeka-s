@@ -22,13 +22,12 @@ class BlockAttachmentsForm extends AbstractHelper
      * @return string
      */
     public function __invoke(SitePageBlockRepresentation $block = null, $itemOnly = false,
-        array $itemQuery = [], ?int $maxAttachments = null)
+        array $itemQuery = [])
     {
         return $this->getView()->partial('common/attachments-form', [
             'block' => $block,
             'itemOnly' => (bool) $itemOnly,
             'itemQuery' => $itemQuery,
-            'maxAttachments' => $maxAttachments,
         ]);
     }
 }
